@@ -1,0 +1,248 @@
+body{
+    color: rgb(84, 141, 52);
+    background-color: rgb(236, 236, 245);
+}
+
+.header{
+justify-content: end;
+}
+.header ul{
+    display: flex;
+    list-style:none;
+    justify-content: end;
+    margin-right: 30px;
+}
+.header img{
+    width: 20px;
+    height: 20px;
+}
+.header li{
+    margin-right: 10px;
+    
+    
+}
+.header a{
+    border: 2px solid green;
+    padding: 2px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.header a:hover{
+    background-color: cadetblue;
+}
+.header ul li:nth-child(1){
+    position: relative;
+    right: 450px;
+    border: 2px solid rgb(71, 194, 40);
+    border-radius: 10px;
+    /* margin-right: 400px; */
+    font-size: 40px;
+    background-color:rgb(84, 141, 52) ;
+    color: aliceblue;
+    overflow: hidden;
+    animation: type 4s 5;
+    }
+    @keyframes type{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 25%;
+        }
+    }
+a{
+    text-decoration: none;
+    color: rgb(84, 141, 52) ;
+    font-size: 17px;
+}
+
+.child3{
+    width: 100%;
+    height: 400px;
+    border-top: 10px solid rgb(206, 145, 13);
+    position: relative;
+    top:-120px;
+    z-index: 1;
+    opacity: 0.9;
+}
+.one h1,h2{
+    position: relative;
+    z-index: 2;
+    top: 20px;
+}
+.child1{
+    display: inline;
+    color: aliceblue;
+    background-color: rgb(84, 141, 52)  ;
+    border: 5px solid white;
+    position: relative;
+    margin-top: 20px;
+    padding: 5px;
+    /* z-index: 4; */
+    margin-left: 60px;
+
+}
+.child2{
+    display: inline;
+    color: aliceblue;
+    background-color: rgb(223, 87, 24)  ;
+    border: 5px solid white;
+  
+    position: relative;
+    margin-top: -50px;
+    margin-left: 150px;
+    padding: 5px;
+    z-index: 3;
+}
+.parent{
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin-right: 20px;
+    margin-top: -500px;
+} 
+.parent nav{
+    text-align: center;
+    border: 8px solid rgb(243, 141, 7);
+    border-radius: 20px;
+    font-size: 20px;
+    margin: back 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(84, 141, 52);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* background-color:rgb(243, 141, 7) ; */
+    /* border: 2px solid rgb(243, 141, 7); */
+    position: relative;
+    top: -60px;
+}
+.grid div{
+    display: flex;
+    border: 2px solid  rgb(84, 141, 52) ;
+    background-color:rgb(84, 141, 52);
+
+}
+.grid img{
+    width: 200px;
+    height: 250px;
+    transition: 1s;
+}
+.grid img:hover{
+    filter: grayscale(2%);
+}
+.grid nav{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    text-align: center;
+}
+.grid button{
+    /* border: 2px solid orange; */
+    border-radius: 20px;
+}
+.new{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+}
+.new img{
+    width: 300px;
+    height: 200px;
+}.new div{
+    border: 4px solid green;
+    width: 350px;
+    height: 260px;
+    background-color: white;
+}
+.new h3{
+    text-align: center;
+}
+.new1{
+    display: inline;
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+    top:-260px;
+
+}
+.new1 div{
+    width: 350px;
+    height: 260px;
+    background-color: rgb(243, 141, 7);
+    color: aliceblue;
+    font-size: 50px;
+    transition-duration: 4s;
+    text-align: center;
+}
+.new1 div:hover{
+    transform: translateY(-265px);
+}
+.Review{
+    display: inline;
+    position: relative;
+    top: -180px;
+    display: flex;
+    /* left: 30px; */
+    justify-content: space-around;
+   
+}
+.img{
+    border-radius: 50%;
+}
+.Review div{
+    position: relative;
+    text-align: center;
+    background-color: rgb(84, 141, 52);
+    border-radius: 20px;
+    width: 180px;
+     transition-property:width ;
+    transition: all 3s;
+}
+.Review div:hover{
+    
+    background-color: rgb(252, 238, 238);
+    width: 280px;
+}
+.contact{
+    display: flex;
+    position: relative;
+    top: -80px;
+    background-image: url(IMG/back2.jpeg);
+    border-radius: 30px;
+}
+.contact div{
+    width: 50%;
+    text-align: center;
+}
+.contact img{
+    width: 610px;
+    height: 280px;
+    border-radius: 30px;
+}
+.contact h1{
+    border: 3px solid rgb(114, 114, 190);
+    width: 300px;
+    margin-left: 130px;
+    border-radius: 30px;
+    background-color: rgb(89, 89, 175);
+    color: rgb(188, 189, 117);
+}
+.contact input{
+    border: 3px solid rgb(114, 114, 190);
+    border-radius: 30px;
+    background-color: rgb(226, 226, 235);
+    color: rgb(238, 18, 18);
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.buttom a {
+    text-decoration: none;
+    font-size: 30px;
+    color: brown;
+    border: 2px solid black;
+}
